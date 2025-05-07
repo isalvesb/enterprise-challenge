@@ -7,14 +7,14 @@
 }
 
 body {
-    background-color: var(--bg-claro);
-    color: var(--texto-claro);
+    background-color: white;
+    color: var(--carvao-profundo);
     padding: 0.15rem 0.15rem 2rem 0.15rem;
 }
 
 body.dark-mode {
-    background-color: var(--bg-escuro);
-    color: var(--texto-escuro);
+    background-color: var(--carvao-profundo);
+    color: white;
 }
 
 header {
@@ -26,10 +26,11 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    font-size: 20px;
 }
 
 header h1 {
-    font-size: 24px;
+    font-size: 40px;
 }
 
 .nav-group {
@@ -39,7 +40,7 @@ header h1 {
 }
 
 nav a {
-    color: var(--branco);
+    color: white;
     margin: 0 12px;
     text-decoration: none;
     font-weight: 600;
@@ -54,6 +55,7 @@ nav a {
     font-weight: bold;
     cursor: pointer;
     margin-left: 0.625rem;
+    font-size: 15px;
 }
 
 .dark-toggle:hover {
@@ -69,9 +71,12 @@ nav a {
 
 h2 {
     font-size: 2rem;
-    color: var(--preto);
+    color: var(--carvao-profundo);
     margin: 1rem 1rem 1rem 1rem;
-    
+}
+
+body.dark-mode h2 {
+    color: var(--branco);
 }
 
 h3 {
@@ -82,11 +87,16 @@ h3 {
     margin: 0.25rem 1rem 1rem 1rem;
 }
 
+body.dark-mode h3 {
+    color: var(--branco);
+}
+
 .cards {
     display: flex;
     text-align: center;
     padding: 0.25rem 1.25rem;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -99,6 +109,11 @@ h3 {
     text-align: center;
     transition: transform 0.3s ease;
 }
+
+body.dark-mode #card1 {
+    background-color: var(--azul-medio);
+}
+
 #card2 {
     background-color: #FCFBFB;
     width: 15rem;
@@ -108,6 +123,11 @@ h3 {
     text-align: center;
     transition: transform 0.3s ease;
 }
+
+body.dark-mode #card2 {
+    background-color: #ccc;
+}
+
 #card3 {
     background-color: #FEFBF3;
     width: 15rem;
@@ -117,6 +137,11 @@ h3 {
     text-align: center;
     transition: transform 0.3s ease;
 }
+
+body.dark-mode #card3 {
+    background-color: var(--dourado);
+}
+
 #card4 {
     background-color: var(--vermelho);
     width: 15rem;
@@ -125,10 +150,6 @@ h3 {
     box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.08);
     text-align: center;
     transition: transform 0.3s ease;
-}
-
-body.dark-mode .card {
-    background-color: #2d2d2d;
 }
 
 .card:hover {
@@ -155,14 +176,16 @@ body.dark-mode .card {
   /* Bloco do formulário */
 .formulario {
     flex: 1;
-    min-width: 300px;
+    min-width: 40.8125rem;
+    height: 23.6875rem;
     background-color: #F2FAFF;
-    padding: 20px;
-    border-radius: 16px;
+    padding: 1.333rem;
+    border-radius: 1rem;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 0.8rem;
+    margin: 1rem 2rem;
 }
 
 body.dark-mode .formulario {
@@ -188,10 +211,9 @@ body.dark-mode .formulario {
 .formulario button {
     width: 10rem;
     background-color: var(--azul-medio);
-    color: var(--branco);
+    color: white;
     font-weight: bold;
     font-size: 1.5rem;
-    font-size: 1.375rem;
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
@@ -223,6 +245,7 @@ body.dark-mode .formulario {
   /* Card de cada perfil */
 .perfil-card {
     background-color: #f5f5f5;
+    color: var(--carvao-profundo);
     padding: 1rem;
     width: 16rem;
     border-radius: 1rem;
@@ -231,7 +254,7 @@ body.dark-mode .formulario {
 }
 
 body.dark-mode .perfil-card {
-    background-color: #2d2d2d;
+    background-color: var(--roxo);
     color: white;
 }
 
@@ -240,4 +263,36 @@ body.dark-mode .perfil-card {
     height: 80px;
     border-radius: 50%;
     margin-bottom: 10px;
+}
+
+.ver-perfil {
+    display: flex;
+    text-align: end;
+    width: 13rem;
+    background-color: var(--azul-marinho);
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 4rem;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+
+#mapa img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: var(--carvao-profundo);
+}
+
+body.dark-mode footer {
+    color: white;
 }
