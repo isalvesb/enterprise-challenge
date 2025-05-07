@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome do site</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/var.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <h1>Nome do site</h1>
+        <div class="nav-group">
+            <nav>
+                <a href="#esportes">Esportes</a>
+                <a href="#buscar">Buscar</a>
+                <a href="#perfis">Perfis</a>
+                <a href="#mapa">Locais</a>
+            </nav>
+            <button class="dark-toggle" onclick="toggleTheme()" title="Alternar modo escuro">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <section id="esportes" class="card">
+        <h2>Esportes Invisibilizados</h2>
+        <h3>Conexões e comunidade</h3>
+        <div class="cards">
+            <div class="card" id="card1">
+                <img src="assets/bocha.png" alt="Esporte1">
+                <h4>Esporte 1</h4>
+                <p>Descrição do esporte 1</p>
+            </div>
+            <div class="card" id="card2">
+                <img src="assets/capoeira.png" alt="Esporte2">
+                <h4>Esporte 2</h4>
+                <p>Descrição esporte 2</p>
+            </div>
+            <div class="card" id="card3">
+                <img src="assets/quadribol.png" alt="Esporte3">
+                <h4>Esporte 3</h4>
+                <p>Descrição esporte 3</p>
+            </div>
+            <div class="card" id="card4">
+                <img src="" alt="Esporte4">
+                <h4>Esporte 4</h4>
+                <p>Descrição esporte 4</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="buscar-perfis" class="section">
+        <div class="duas-colunas">
+          
+          <!-- Formulário -->
+          <form class="formulario">
+            <h2>Encontre um parceiro ou professor</h2>
+            <select>
+              <option>Escolha o esporte</option>
+              <option>Capoeira</option>
+              <option>Bocha</option>
+              <option>Quadribol</option>
+            </select>
+            <select>
+              <option>Nível de prática</option>
+              <option>Iniciante</option>
+              <option>Intermediário</option>
+              <option>Avançado</option>
+            </select>
+            <input type="text" placeholder="Digite sua cidade" />
+            <button>Buscar</button>
+          </form>
+      
+          <!-- Perfis -->
+          <div class="bloco-perfis">
+            <h2>Perfis</h2>
+            <div class="perfil">
+              <div class="perfil-card">
+                <img src="https://i.pravatar.cc/80?img=5" alt="Perfil" />
+                <h3>Lara Nogueira</h3>
+                <p>Capoeira · 4 anos</p>
+                <p>Disponível</p>
+              </div>
+              <div class="perfil-card">
+                <img src="https://i.pravatar.cc/80?img=8" alt="Perfil" />
+                <h3>Gabriel Lima</h3>
+                <p>Bocha · 2 anos</p>
+                <p>Finais de semana</p>
+              </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    
+
+    <section id="mapa" class="section">
+        <h2>Locais de prática</h2>
+        <img src="assets/mapa.png" alt="Exemplo de mapa">
+    </section>
+
+    <footer>
+        Nome do site © 2025 - Inspirado nas Olimpíadas de Paris 2024
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

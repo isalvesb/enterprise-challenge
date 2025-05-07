@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    transition: all 0.3s ease;
+}
+
+body {
+    background-color: var(--bg-claro);
+    color: var(--texto-claro);
+    padding: 0.15rem 0.15rem 2rem 0.15rem;
+}
+
+body.dark-mode {
+    background-color: var(--bg-escuro);
+    color: var(--texto-escuro);
+}
+
+header {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    display: flex;
+    padding:  2.5rem 2rem 2.5rem 2rem;
+    border-radius: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.nav-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: var(--branco);
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.dark-toggle {
+    display: flex;
+    background-color: var(--amarelo);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 0.625rem;
+}
+
+.dark-toggle:hover {
+    transform: scale(1.1);
+}
+
+.section {
+    margin-top: 2.5rem;
+    /* opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards; */
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--preto);
+    margin: 1rem 1rem 1rem 1rem;
+    
+}
+
+h3 {
+    color: #3c4e5e;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0.25rem 1rem 1rem 1rem;
+}
+
+.cards {
+    display: flex;
+    text-align: center;
+    padding: 0.25rem 1.25rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+#card1 {
+    background-color: #F1FAFE;
+    width: 15rem;
+    height: 18.1875rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+#card2 {
+    background-color: #FCFBFB;
+    width: 15rem;
+    height: 18.1875rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+#card3 {
+    background-color: #FEFBF3;
+    width: 15rem;
+    height: 18.1875rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+#card4 {
+    background-color: var(--vermelho);
+    width: 15rem;
+    height: 18.1875rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+body.dark-mode .card {
+    background-color: #2d2d2d;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    padding: 1rem;
+}
+
+.card img {
+    display: block;
+    margin: 12px auto 12px;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Contêiner geral das duas colunas */
+.duas-colunas {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+  /* Bloco do formulário */
+.formulario {
+    flex: 1;
+    min-width: 300px;
+    background-color: #F2FAFF;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+body.dark-mode .formulario {
+    background-color: var(--roxo);
+    color: white;
+}
+
+  /* Campos do formulário */
+.formulario select,
+.formulario input {
+    display: flex;
+    width: 36.5625rem;
+    align-items: flex-end;
+    align-content: flex-end;
+    gap: 1.75rem 4.125rem;
+    flex-wrap: wrap;
+    padding: 0.8rem;
+    border-radius: 0.533rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.formulario button {
+    width: 10rem;
+    background-color: var(--azul-medio);
+    color: var(--branco);
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-size: 1.375rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0.5rem 13.62rem 5rem 13.62rem;
+}
+
+.formulario button:hover {
+    background-color: var(--azul-medio);
+}
+
+  /* Bloco dos perfis */
+.bloco-perfis {
+    flex: 1;
+    min-width: 300px;
+}
+
+  /* Lista de perfis */
+.perfil {
+    display: flex;
+    gap: 1.333rem;
+    flex-wrap: wrap;
+}
+
+  /* Card de cada perfil */
+.perfil-card {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    width: 16rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+body.dark-mode .perfil-card {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+.perfil-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
