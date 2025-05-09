@@ -309,42 +309,29 @@ body.dark-mode footer {
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     flex-wrap: wrap;
     gap: 30px;
-}
-
-.footer-left p {
     color: white;
-    margin: 6px 0;
 }
 
-.footer-left a {
-    color: var(--amarelo);
+.footer-content p a {
     text-decoration: none;
+    color: var(--amarelo);
+    margin: 1rem auto;    
 }
 
-.footer-left a:hover {
-    transform: scale(1.2);
-}
-
-.footer-right {
+.footer-content ul {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.25rem;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
 }
 
-.footer-right a {
-    margin-left: 12px;
-    text-decoration: none;
+.footer-content ul li a {
     color: var(--amarelo);
-    font-weight: 500;
-    font-size: 28px;
-}
-
-
-.footer-right a:hover {
-    transform: scale(1.2);
+    font-size: 24px;
+    
 }
