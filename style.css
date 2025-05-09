@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    transition: all 0.3s ease;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+    color: var(--carvao-profundo);
+    padding: 0.15rem 0.15rem 2rem 0.15rem;
+}
+
+body.dark-mode {
+    background-color: var(--carvao-profundo);
+    color: white;
+}
+
+header {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    display: flex;
+    padding: 2.5rem 2rem 2.5rem 2rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.nav-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.dark-toggle {
+    display: flex;
+    background-color: var(--amarelo);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 0.625rem;
+    font-size: 15px;
+}
+
+.dark-toggle:hover {
+    transform: scale(1.1);
+}
+
+.section {
+    margin-top: 2.5rem;
+    /* opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards; */
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--carvao-profundo);
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+body.dark-mode h2 {
+    color: var(--branco);
+}
+
+h3 {
+    color: #3c4e5e;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0.25rem 1rem 1rem 1rem;
+}
+
+body.dark-mode h3 {
+    color: var(--branco);
+}
+
+.cards {
+    display: flex;
+    text-align: center;
+    padding: 0.25rem 1.25rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#card1 {
+    background-color: #F1FAFE;
+    width: 15rem;
+    height: 18.1875rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+body.dark-mode #card1 {
+    background-color: var(--azul-medio);
+}
+
+#card2 {
+    background-color: #FCFBFB;
+    width: 15rem;
+    height: 18.1875rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+body.dark-mode #card2 {
+    background-color: #ccc;
+}
+
+#card3 {
+    background-color: #FEFBF3;
+    width: 15rem;
+    height: 18.1875rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+body.dark-mode #card3 {
+    background-color: var(--dourado);
+}
+
+#card4 {
+    background-color: var(--vermelho);
+    width: 15rem;
+    height: 18.1875rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    padding: 1rem;
+}
+
+.card img {
+    display: block;
+    margin: 12px auto 12px;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Contêiner geral das duas colunas */
+.duas-colunas {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/* Bloco do formulário */
+.formulario {
+    flex: 1;
+    min-width: 40.8125rem;
+    height: 23.6875rem;
+    background-color: #F2FAFF;
+    padding: 1.333rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 1rem 2rem;
+}
+
+body.dark-mode .formulario {
+    background-color: var(--roxo);
+    color: white;
+}
+
+/* Campos do formulário */
+.formulario select,
+.formulario input {
+    display: flex;
+    width: 36.5625rem;
+    align-items: flex-end;
+    align-content: flex-end;
+    gap: 1.75rem 4.125rem;
+    flex-wrap: wrap;
+    padding: 0.8rem;
+    border-radius: 0.533rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.formulario button {
+    width: 10rem;
+    background-color: var(--azul-medio);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0.5rem 13.62rem 5rem 13.62rem;
+}
+
+.formulario button:hover {
+    background-color: var(--azul-medio);
+}
+
+/* Bloco dos perfis */
+.bloco-perfis {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Lista de perfis */
+.perfil {
+    display: flex;
+    gap: 1.333rem;
+    flex-wrap: wrap;
+}
+
+/* Card de cada perfil */
+.perfil-card {
+    background-color: #f5f5f5;
+    color: var(--carvao-profundo);
+    padding: 1rem;
+    width: 16rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+body.dark-mode .perfil-card {
+    background-color: var(--roxo);
+    color: white;
+}
+
+.perfil-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.ver-perfil {
+    display: flex;
+    text-align: center;
+    width: 13rem;
+    background-color: var(--azul-marinho);
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 4rem;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+
+.section img {
+    display: flex;
+    margin: 1.333rem auto;
+    padding: 0.25rem 0.25rem;
+}
+
+footer {
+    background-color: var(--azul-escuro);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 20px 20px;
+    margin: 2rem 0 0 0;
+    font-size: 14px;
+}
+
+body.dark-mode footer {
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-left p {
+    color: white;
+    margin: 6px 0;
+}
+
+.footer-left a {
+    color: var(--amarelo);
+    text-decoration: none;
+}
+
+.footer-left a:hover {
+    transform: scale(1.2);
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.footer-right a {
+    margin-left: 12px;
+    text-decoration: none;
+    color: var(--amarelo);
+    font-weight: 500;
+    font-size: 28px;
+}
+
+
+.footer-right a:hover {
+    transform: scale(1.2);
+}
