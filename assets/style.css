@@ -1,24 +1,35 @@
 :root {
-    --azul-claro: #009CE0;
-    --azul-marinho: #0A1C43;
+    --azul-claro: #009ce0;
+    --azul-marinho: #0a1c43;
     --azul-petroleo: #003854;
     --branco: #fff;
-    --cinza-claro: #F5F5F5;
-    --cinza-medio: #3C4E5E;
-    --cinza-escuro: #1E1E1E;
-    --dourado: #D6C67E;
-    --lilas: #7D85C2;
+    --cinza-claro: #f5f5f5;
+    --cinza-medio: #3c4e5e;
+    --cinza-escuro: #1e1e1e;
+    --dourado: #d6c67e;
+    --lilas: #7d85c2;
     --preto: #000;
-    --rosa: #E7ADCF;
+    --rosa: #e7adcf;
     --roxo: #331261;
-    --turquesa: #17B8B0;
-    --vermelho: #FF5757;
-    font-family: 'Outfit', sans-serif;
+    --turquesa: #17b8b0;
+    --vermelho: #ff5757;
+    font-family: "Outfit", sans-serif;
 }
 
 body {
-    border-top-right-radius: .5rem;
-    border-top-left-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.img-responsiva {
+    width: 20px;
+    height: 50px;
+    object-fit: cover;
 }
 
 nav a {
@@ -90,12 +101,12 @@ h2 {
 }
 
 .card-esporte-2 {
-    background-color: var(--roxo);
+    background-color: var(--rosa);
     color: var(--branco);
 }
 
 .card-esporte-3 {
-    background-color: var(--rosa);
+    background-color: var(--roxo);
     color: var(--branco);
 }
 
@@ -105,7 +116,7 @@ h2 {
 }
 
 .bg-container {
-    background-color: #F2FAFF;
+    background-color: #f2faff;
 }
 
 .btn-color-1 {
@@ -145,8 +156,14 @@ footer.bg-footer {
     background-color: var(--azul-marinho) !important;
 }
 
-.contato {
+.icons :hover {
+    transform: scale(1.5);
+    z-index: 1;
     color: var(--dourado);
+}
+
+.contato {
+    color: var(--dourado) !important;
 }
 
 .contato:hover {
