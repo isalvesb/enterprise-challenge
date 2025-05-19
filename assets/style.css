@@ -215,3 +215,17 @@ body.dark-mode .bg-container {
 body.dark-mode .bg-container h3 {
     color: var(--azul-claro);
 }
+
+#map {
+    height: 100vh;
+    z-index: 0;
+}
+
+.titulo-mapa {
+    color: var(--azul-marinho);
+}
+
+#form-localizacao {
+    max-width: 600px;
+    margin: 0;
+}
