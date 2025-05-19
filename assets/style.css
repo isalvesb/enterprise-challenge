@@ -1,171 +1,217 @@
 :root {
-    --azul-claro: #009ce0;
-    --azul-marinho: #0a1c43;
-    --azul-petroleo: #003854;
-    --branco: #fff;
-    --cinza-claro: #f5f5f5;
-    --cinza-medio: #3c4e5e;
-    --cinza-escuro: #1e1e1e;
-    --dourado: #d6c67e;
-    --lilas: #7d85c2;
-    --preto: #000;
-    --rosa: #e7adcf;
-    --roxo: #331261;
-    --turquesa: #17b8b0;
-    --vermelho: #ff5757;
-    font-family: "Outfit", sans-serif;
+  --azul-claro: #009ce0;
+  --azul-marinho: #0a1c43;
+  --azul-petroleo: #003854;
+  --branco: #fff;
+  --cinza-claro: #f5f5f5;
+  --cinza-medio: #3c4e5e;
+  --cinza-escuro: #1e1e1e;
+  --dourado: #d6c67e;
+  --lilas: #7d85c2;
+  --preto: #000;
+  --rosa: #e7adcf;
+  --roxo: #331261;
+  --turquesa: #17b8b0;
+  --vermelho: #ff5757;
+  font-family: "Outfit", sans-serif;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
-    flex: 1;
+  flex: 1;
 }
 
-.img-responsiva {
-    width: 20px;
-    height: 50px;
-    object-fit: cover;
+.img-logo {
+  width: 20px;
+  max-height: 50px;
+  object-fit: cover;
 }
 
 nav a {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .bg-header {
-    background-color: var(--azul-marinho) !important;
+  background-color: var(--azul-marinho) !important;
 }
 
 .navbar .nav-link {
-    color: white !important;
+  color: white !important;
 }
 
 .navbar .nav-link:hover {
-    color: var(--dourado) !important;
+  color: var(--dourado) !important;
 }
 
 .navbar .navbar-brand {
-    color: white !important;
+  color: white !important;
 }
 
 .btn-atleta {
-    background-color: var(--lilas);
+  background-color: var(--lilas);
 }
 
 .btn-atleta:hover {
-    background-color: var(--roxo) !important;
+  background-color: var(--roxo) !important;
 }
 
 /* Ajustes para o botão de troca */
 #theme-toggle {
-    border: none;
-    background: transparent;
-    color: var(--branco);
+  border: none;
+  background: transparent;
+  color: var(--branco);
 }
 
 h1 {
-    color: var(--azul-marinho);
+  color: var(--azul-marinho);
 }
 
 h2 {
-    color: var(--cinza-medio);
+  color: var(--cinza-medio);
 }
 
 .card {
-    transition: transform 0.3s ease-in-out;
-    will-change: transform;
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    z-index: 1;
+  transform: scale(1.05);
+  z-index: 1;
 }
 
 .btn-color {
-    background-color: var(--azul-marinho);
-    color: var(--branco);
+  background-color: var(--azul-marinho);
+  color: var(--branco);
 }
 
 .btn-color:hover {
-    background-color: var(--dourado);
-    color: var(--preto);
+  background-color: var(--dourado);
+  color: var(--preto);
 }
 
 .card-esporte-1 {
-    background-color: var(--azul-petroleo);
-    color: var(--branco);
+  background-color: var(--azul-petroleo);
+  color: var(--branco);
 }
 
 .card-esporte-2 {
-    background-color: var(--rosa);
-    color: var(--branco);
+  background-color: var(--rosa);
+  color: var(--branco);
 }
 
 .card-esporte-3 {
-    background-color: var(--roxo);
-    color: var(--branco);
+  background-color: var(--roxo);
+  color: var(--branco);
 }
 
 .card-esporte-4 {
-    background-color: var(--turquesa);
-    color: var(--branco);
+  background-color: var(--turquesa);
+  color: var(--branco);
 }
 
 .bg-container {
-    background-color: #f2faff;
+  background-color: #f2faff;
 }
 
 .btn-color-1 {
-    background-color: var(--azul-marinho);
+  background-color: var(--azul-marinho);
 }
 
 .btn-color-1:hover {
-    background-color: var(--dourado);
+  background-color: var(--dourado);
 }
 
 .bg-container {
-    padding: 2rem;
-    border-radius: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 .card-perfil {
-    background-color: var(--lilas) !important;
+  background-color: var(--lilas) !important;
 }
 
 .card-perfil h5 p {
-    color: var(--branco);
+  color: var(--branco);
 }
 
 h3 {
-    color: var(--azul-marinho);
+  color: var(--azul-marinho);
 }
 
 footer.bg-footer {
-    padding-top: 0.5rem;
-    /* ou 8px */
-    padding-bottom: 0.5rem;
-    font-size: 0.875rem;
-    /* opcional: reduz tamanho da fonte */
+  padding-top: 0.5rem;
+  /* ou 8px */
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  /* opcional: reduz tamanho da fonte */
 }
 
 .bg-footer {
-    background-color: var(--azul-marinho) !important;
+  background-color: var(--azul-marinho) !important;
 }
 
 .icons :hover {
-    transform: scale(1.5);
-    z-index: 1;
-    color: var(--dourado);
+  transform: scale(1.5);
+  z-index: 1;
+  color: var(--dourado);
 }
 
 .contato {
-    color: var(--dourado) !important;
+  color: var(--dourado) !important;
 }
 
 .contato:hover {
-    font-style: italic;
+  font-style: italic;
+}
+
+/* Tema escuro */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode h1 {
+  color: var(--azul-claro);
+}
+
+.dark-mode h2 {
+  color: var(--branco);
+}
+
+.navbar.dark-mode,
+.card.card-esporte-1 {
+  background-color: var(--azul-petroleo);
+  color: #fff;
+}
+
+.navbar.dark-mode,
+.card.card-esporte-2 {
+  background-color: var(--rosa);
+  color: var(--branco);
+}
+
+.navbar.dark-mode,
+.card.card-esporte-3 {
+  background-color: var(--roxo);
+  color: var(--branco);
+}
+
+.navbar.dark-mode,
+.card.card-esporte-4 {
+  background-color: var(--turquesa);
+  color: var(--branco);
+}
+
+body.dark-mode .bg-container {
+    background-color: var(--cinza-medio);
+}
+
+body.dark-mode .bg-container h3 {
+    color: var(--azul-claro);
 }
