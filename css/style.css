@@ -239,6 +239,13 @@ body.dark-mode .bg-container h3 {
   z-index: 0;
 }
 
+#map .mapa-responsivo {
+  width: 100%;
+  min-height: 400px;
+  max-width: 100%;
+  border-radius: 50px;
+}
+
 .titulo-mapa {
   color: var(--azul-marinho);
   margin-bottom: 8px;
@@ -247,4 +254,15 @@ body.dark-mode .bg-container h3 {
 #form-localizacao {
   max-width: 600px;
   margin: 0;
+}
+
+.form-control {
+  width: 500px;
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 576px) {
+  #map {
+    height: 300px;
+  }
 }
